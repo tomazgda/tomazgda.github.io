@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your site description">
+    
+    <link rel="shortcut icon" href="https://tomazgda.github.io/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>Exercises</title>
+</head>
+<body><header id="banner">
+    <h2><a href="https://tomazgda.github.io/">Computer Science Booklet</a></h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>Exercises</h1><time>February 10, 2021</time></header><iframe src="https://trinket.io/embed/python3/97b7a34d5c" width="100%" height="356" frameborder="50" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<h1 id="exercise-11">Exercise 11</h1>
+<p>Asks user to enter name, records user input, prints that input (name).</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s1">&#39;enter your name&#39;</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div><h1 id="exercise-12">Exercise 12</h1>
+<ol>
+<li>The issue with this program is that the user can input any value that is not &lsquo;Yes&rsquo; and sill get the message stating they will get wet.</li>
+<li>&ldquo;If it rains, you will stay dry&rdquo;</li>
+<li>[Discussed in question. 1]</li>
+</ol>
+<h1 id="exercise-13">Exercise 13</h1>
+<ol>
+<li>&ldquo;you are a woman&rdquo;</li>
+<li>&ldquo;you are not allowed in the sixth form cafe&rdquo;</li>
+<li>&ldquo;incorrect password&rdquo;</li>
+</ol>
+<h1 id="exercise-14">Exercise 14</h1>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;what is your name?&#34;</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span>
+<span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&#34;Tom&#34;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;hello Tom&#34;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Where is Tom?&#34;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;do you like hot weather?&#34;</span><span class="p">)</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="s2">&#34;Yes&#34;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;go to the beach&#34;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Go somewhere cool on holiday... Like Finland.&#34;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;do you like milk?&#34;</span><span class="p">)</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="s2">&#34;Yes&#34;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;That is great, it is a good source of calcium&#34;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;how old are you?&#34;</span><span class="p">)</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="k">if</span> <span class="n">ans</span> <span class="o">&gt;=</span> <span class="mi">14</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;you are doing GCSEs&#34;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">ans</span> <span class="o">&lt;</span> <span class="mi">14</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;you are not doing GCSEs&#34;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;do you enjoy creative subjects?&#34;</span><span class="p">)</span>
+    <span class="n">ans2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">ans2</span> <span class="o">==</span> <span class="s2">&#34;Yes&#34;</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Maybe you should think about Art or Music?&#34;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Maybe you should think about Computing?&#34;</span><span class="p">)</span>
+</code></pre></div><h1 id="exercise-24">Exercise 24</h1>
+<p>It will ask the user to enter a value. It will then print every number between 0 (including 0) and 1 less than that number.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;enter an end value&#34;</span><span class="p">)</span>
+<span class="n">end</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="k">for</span> <span class="n">counter</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">end</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+</code></pre></div><h1 id="exercise-25">Exercise 25</h1>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;enter an end value&#34;</span><span class="p">)</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;enter how many times tables do you wish for?&#34;</span><span class="p">)</span>
+<span class="n">max_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">counter</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">max_count</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="s2">&#34;times&#34;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&#34;is&#34;</span><span class="p">,</span> <span class="p">(</span><span class="n">count</span> <span class="o">*</span> <span class="n">num</span><span class="p">))</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div><h1 id="exercise-26">Exercise 26</h1>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">pocketMoney</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="k">for</span> <span class="n">week</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;It is week &#34;</span><span class="p">,</span><span class="n">week</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;You will get £ &#34;</span><span class="p">,</span><span class="n">pocketMoney</span><span class="p">)</span>
+</code></pre></div><h1 id="exercise-27">Exercise 27</h1>
+<p>Asks the user to enter a password until it matches &ldquo;thepassword&rdquo;.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="err">“</span><span class="n">Enter</span> <span class="n">your</span> <span class="n">password</span><span class="err">”</span><span class="p">)</span>
+<span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="k">while</span> <span class="n">password</span> <span class="o">!=</span> <span class="err">“</span><span class="n">thepassword</span><span class="err">”</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="err">“</span><span class="n">incorrect</span> <span class="n">password</span><span class="p">,</span> <span class="k">try</span> <span class="n">again</span><span class="err">”</span><span class="p">)</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</code></pre></div><p>A while loops executes the instruction within the loop until a requirement is met.</p>
+<h1 id="exercise-28">Exercise 28</h1>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">totalValue</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">newValue</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">totalValue</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s2">&#34;how much are you putting in your piggy bank?”)</span>
+    <span class="n">newValue</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="n">totalValue</span> <span class="o">=</span> <span class="n">totalValue</span><span class="o">+</span><span class="n">newValue</span>
+    <span class="n">newValue</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">totalValue</span><span class="p">)</span>
+</code></pre></div></article>
+
+        </main><footer id="footer">
+    Copyright © 2021 Tomaz GdA
+</footer>
+</body>
+</html>
