@@ -25,25 +25,40 @@
 <ol>
 <li>Output all numbers from 1 to 100</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py">
-<span class="k">for</span> <span class="n">i</span> 
-
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div><ol start="2">
-<li>
-<p>Output all even numbers from 1 to 100</p>
-</li>
+<li>Output all even numbers from 1 to 100</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div><ol start="3">
 <li>
 <p>Ask the user to enter a start value and a stop value, then output all numbers between these two values</p>
 <ul>
 <li>Output all numbers between these two values.</li>
 </ul>
 </li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">start</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What number would you like to start from?&#34;</span><span class="p">))</span>
+<span class="n">stop</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;What number would you like to stop at?&#34;</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div><ol start="4">
 <li>
 <p>Ask the user to provide an integer value</p>
 <ul>
 <li>Multiply and output this value by every number from 1 to 100</li>
 </ul>
 </li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Please provide an input value&#34;</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">value</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+</code></pre></div><ol start="5">
 <li>
 <p>Ask the user to enter ‘odd’ or ‘even’</p>
 <ul>
@@ -52,6 +67,16 @@
 <li>USE only 1 FOR loop in this exercise</li>
 </ul>
 </li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;please select EVEN or ODD&#34;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="s2">&#34;EVEN&#34;</span> <span class="ow">and</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div><ol start="6">
 <li>
 <p>Output the first 50 numbers of the Fibonacci sequence</p>
 </li>
@@ -61,6 +86,17 @@
 <li>Sum all the numbers between these two values and output the sum</li>
 </ul>
 </li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">start</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;please input a START value&#34;</span><span class="p">))</span>
+<span class="n">stop</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;please input a STOP value&#34;</span><span class="p">))</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="n">i</span>
+    
+<span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</code></pre></div><ol start="8">
 <li>
 <p>Create a program which loops 10 times</p>
 <ul>
@@ -72,7 +108,28 @@
 </ul>
 </li>
 </ol>
-</article>
+<p><strong>This program is going to contain two parts.</strong></p>
+<p>First is the function which checks whether a number is valid (an int or float).</p>
+<p><a href="https://www.tutorialspoint.com/check-if-a-given-string-is-a-valid-number-in-python">Where I found the function</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">isNumeric</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+   <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+   <span class="k">try</span><span class="p">:</span>
+      <span class="n">s</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+      <span class="k">return</span> <span class="bp">True</span>
+   <span class="k">except</span><span class="p">:</span>
+      <span class="k">return</span> <span class="bp">False</span>
+</code></pre></div><p>The remaining code carries out the rest of the program.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+  <span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;enter a number&#34;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">isNumeric</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;that was not a valid number&#34;</span><span class="p">)</span>
+    
+<span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</code></pre></div></article>
 
         </main><footer id="footer">
     Made by, Tomaz GdA 2021
