@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your site description">
+    
+    <link rel="shortcut icon" href="https://tomazgda.github.io/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>Validation</title>
+</head>
+<body><header id="banner">
+    <h2><a href="https://tomazgda.github.io/">Computer Science Booklet</a></h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>Validation</h1><time>February 25, 2021</time></header><p>The following code checks the length of the string &lsquo;password&rsquo;. If it is less than six, it will print &ldquo;Invalid&rdquo;.</p>
+<pre><code>    password = “password123”
+
+    IF password.length &lt; 6 THEN
+    PRINT “Invalid”
+    ELSE
+    PRINT “Valid”
+    END IF
+</code></pre><p>The following code will check &lsquo;age&rsquo; against the numbers 10 and 19. If it is greater than 10 and less than 19, it will print &ldquo;senior school pupil&rdquo;. If not it will print &ldquo;too old or too young&rdquo;.</p>
+<pre><code>    age = 15
+
+    IF age &gt; 10 AND age &lt; 19 THEN
+    PRINT “senior school pupil”
+    ELSE
+    PRINT “too old or too young”
+    END IF
+</code></pre><p>The following code will check if age is an integer.</p>
+<pre><code>age = 15
+
+    IF age is integer THEN
+    PRINT “this is an acceptable value”
+    ELSE
+    PRINT “this isn’t a number”
+    END IF
+</code></pre><p>The following code will check if the variable &lsquo;name&rsquo; contains and data.</p>
+<pre><code>    INPUT name
+
+    IF name NOT NULL THEN
+    PRINT “hello ” + name
+    ELSE
+    PRINT “you didn’t enter a name”
+    END IF
+</code></pre><p>The following code will check if &lsquo;formGroup&rsquo; is in the format &lsquo;LNLLL&rsquo;.</p>
+<pre><code>    INPUT formGroup
+
+    IF formGroup IN FORMAT LNLLL THEN
+    PRINT “you are in ” + formGroup
+    ELSE
+    PRINT “this form group is not recognised”
+    END IF
+</code></pre></article>
+
+        </main><footer id="footer">
+    Made by, Tomaz GdA 2021
+</footer>
+</body>
+</html>
