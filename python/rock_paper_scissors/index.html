@@ -22,6 +22,7 @@
 <article>
     <header id="post-header">
         <h1>Rock_paper_scissors</h1><time>February 25, 2021</time></header><iframe src="https://trinket.io/embed/python3/97b7a34d5c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<h2 id="imports-and-variables">Imports and variables</h2>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="n">usrScore</span> <span class="o">=</span> <span class="mi">0</span>
@@ -30,6 +31,8 @@
 
 <span class="n">choices</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;R&#34;</span><span class="p">,</span> <span class="s2">&#34;P&#34;</span><span class="p">,</span> <span class="s2">&#34;S&#34;</span><span class="p">]</span>
 
+</code></pre></div><h2 id="ascii-art">ASCII art</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
 <span class="k">def</span> <span class="nf">rock</span><span class="p">():</span>
    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;&#34;&#34;
 </span><span class="s2">      _______
@@ -60,43 +63,8 @@
 </span><span class="s2">   ---.__(___)
 </span><span class="s2">  &#34;&#34;&#34;</span><span class="p">)</span>
 
-
-
-<span class="k">def</span> <span class="nf">rAs</span><span class="p">():</span>
-   <span class="n">rock</span><span class="p">()</span>
-   <span class="n">scissors</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">rAp</span><span class="p">():</span>
-   <span class="n">rock</span><span class="p">()</span>
-   <span class="n">paper</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">rAr</span><span class="p">():</span>
-   <span class="n">rock</span><span class="p">()</span>
-   <span class="n">rock</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">pAr</span><span class="p">():</span>
-   <span class="n">paper</span><span class="p">()</span>
-   <span class="n">rock</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">pAp</span><span class="p">():</span>
-   <span class="n">paper</span><span class="p">()</span>
-   <span class="n">paper</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">pAs</span><span class="p">():</span>
-   <span class="n">paper</span><span class="p">()</span>
-   <span class="n">scissors</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">sAr</span><span class="p">():</span>
-   <span class="n">scissors</span><span class="p">()</span>
-   <span class="n">rock</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">sAp</span><span class="p">():</span>
-    <span class="n">scissors</span><span class="p">()</span>
-    <span class="n">paper</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">sAs</span><span class="p">():</span>
-   <span class="n">scissors</span><span class="p">()</span>
-   <span class="n">scissors</span><span class="p">()</span>
-
+</code></pre></div><h2 id="game-loop">Game loop</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
 <span class="k">while</span> <span class="n">GameEnd</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
 
   <span class="k">if</span> <span class="n">comScore</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">:</span>
@@ -110,37 +78,46 @@
     <span class="n">comInput</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">choices</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="n">comInput</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;R&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;R&#34;</span><span class="p">:</span>
-      <span class="n">rAr</span><span class="p">()</span>
+      <span class="n">rock</span><span class="p">()</span>
+      <span class="n">scissors</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;draw&#34;</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;R&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;P&#34;</span><span class="p">:</span>
-      <span class="n">rAp</span><span class="p">()</span>
+      <span class="n">rock</span><span class="p">()</span>
+      <span class="n">paper</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;player loose&#34;</span><span class="p">)</span>
       <span class="n">comScore</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;R&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;S&#34;</span><span class="p">:</span>
-      <span class="n">rAs</span><span class="p">()</span>
+      <span class="n">rock</span><span class="p">()</span>
+      <span class="n">scissors</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;player win&#34;</span><span class="p">)</span>
       <span class="n">usrScore</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;P&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;R&#34;</span><span class="p">:</span>
-      <span class="n">pAr</span><span class="p">()</span>
+      <span class="n">paper</span><span class="p">()</span>
+      <span class="n">rock</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;player win&#34;</span><span class="p">)</span>
       <span class="n">usrScore</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;P&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;P&#34;</span><span class="p">:</span>
-      <span class="n">pAp</span><span class="p">()</span>
+      <span class="n">paper</span><span class="p">()</span>
+      <span class="n">paper</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;draw&#34;</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;P&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;S&#34;</span><span class="p">:</span>
-      <span class="n">pAs</span><span class="p">()</span>
+      <span class="n">paper</span><span class="p">()</span>
+      <span class="n">scissors</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;player loose&#34;</span><span class="p">)</span>
       <span class="n">comScore</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;S&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;R&#34;</span><span class="p">:</span>
-      <span class="n">sAr</span><span class="p">()</span>
+      <span class="n">scissors</span><span class="p">()</span>
+      <span class="n">rock</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;player loose&#34;</span><span class="p">)</span>
       <span class="n">comScore</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;S&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;P&#34;</span><span class="p">:</span>
-      <span class="n">sAp</span><span class="p">()</span>
+      <span class="n">scissors</span><span class="p">()</span>
+      <span class="n">paper</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;player win&#34;</span><span class="p">)</span>
       <span class="n">usrScore</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">elif</span> <span class="n">usrInput</span> <span class="o">==</span> <span class="s2">&#34;S&#34;</span> <span class="ow">and</span> <span class="n">comInput</span> <span class="o">==</span> <span class="s2">&#34;S&#34;</span><span class="p">:</span>
-      <span class="n">sAs</span><span class="p">()</span>
+      <span class="n">scissors</span><span class="p">()</span>
+      <span class="n">scissors</span><span class="p">()</span>
       <span class="k">print</span><span class="p">(</span><span class="s2">&#34;draw&#34;</span><span class="p">)</span>
 
 </code></pre></div></article>
