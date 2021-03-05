@@ -36,6 +36,38 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s2">&#34;No!&#34;</span><span class="p">)</span>
 </code></pre></div><h1 id="my-quiz">My Quiz</h1>
+<p>This quiz currently only works with addition but it will generate an endless number of questions if you so wish.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">lines</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;+--------------+&#34;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&#34;WELCOME TO MY ADDITION QUIZ&#34;</span><span class="p">)</span>
+
+<span class="n">lines</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">num_ques</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;please enter how many questions you want&#34;</span><span class="p">))</span>
+
+<span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">17</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_ques</span><span class="p">):</span>
+  <span class="n">n1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+  <span class="n">n2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+  
+  <span class="k">print</span><span class="p">(</span><span class="s2">&#34;What is &#34;</span><span class="p">,</span> <span class="n">n1</span><span class="p">,</span> <span class="s2">&#34;+&#34;</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="s2">&#34;?&#34;</span><span class="p">)</span>
+  <span class="n">ans</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+  
+  <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="p">(</span><span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;correct&#34;</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+<span class="k">print</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span> <span class="n">num_ques</span><span class="p">)</span>
+
+</code></pre></div><h1 id="worse-quiz">Worse Quiz</h1>
+<p>This was my first attemp. It is not very good but I have included it anyway.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;Welcome to my Quiz&#34;</span><span class="p">)</span>
 <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">def</span> <span class="nf">quiz</span><span class="p">(</span><span class="n">question_number</span><span class="p">):</span>
