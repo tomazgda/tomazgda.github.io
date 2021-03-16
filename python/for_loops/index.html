@@ -77,9 +77,23 @@
         <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div><ol start="6">
-<li>
-<p>Output the first 50 numbers of the Fibonacci sequence</p>
-</li>
+<li>Output the first 50 numbers of the Fibonacci sequence</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+  <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+  
+  <span class="n">nterms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;please enter the number of terms&#34;</span><span class="p">))</span>
+  
+  <span class="k">if</span> <span class="n">nterms</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;please enter a positive integer&#34;</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span> 
+    <span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">nterms</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">n1</span><span class="p">)</span>
+      <span class="n">nth</span> <span class="o">=</span> <span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span>
+      <span class="n">n1</span> <span class="o">=</span> <span class="n">n2</span> 
+      <span class="n">n2</span> <span class="o">=</span> <span class="n">nth</span>
+      <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div><ol start="7">
 <li>
 <p>Ask the user to enter a start value and a stop</p>
 <ul>
@@ -129,7 +143,8 @@
     <span class="k">print</span><span class="p">(</span><span class="s2">&#34;that was not a valid number&#34;</span><span class="p">)</span>
     
 <span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
-</code></pre></div></article>
+</code></pre></div><p>D:/cmospwd-5.0/windows/cmospwd_win.exe</p>
+</article>
 
         </main><footer id="footer">
     Made by, Tomaz GdA 2021
